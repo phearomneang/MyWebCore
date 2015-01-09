@@ -10,4 +10,8 @@ public class Page:System.Web.UI.Page
 			return Convert.ToInt32(HttpContext.Current.Request.QueryString["id"]);
 		}
 	}
+	public static string GeFullName(string userid)
+	{
+		return this.FullName;
+	}
 }
