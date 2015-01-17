@@ -12,15 +12,19 @@ public class Page:System.Web.UI.Page
 	}
 	public static string GeFullName(string userid)
 	{
-		return this.FullName;
+		return "FullName";
 	}
-	public static string UserName{
-		ge{
+	public static string UserName
+	{
+		ge
+		{
 			return HttpContext.Current.User.Identity.Name;
 		}
 	}
-	public stat bool IsAuthenticated{
-		get{
+	public stat bool IsAuthenticated
+	{
+		get
+		{
 			return HttpContext.Current.User.Identity.IsAuthenticated;
 		}
 	}
