@@ -14,4 +14,14 @@ public class Page:System.Web.UI.Page
 	{
 		return this.FullName;
 	}
+	public static string UserName{
+		ge{
+			return HttpContext.Current.User.Identity.Name;
+		}
+	}
+	public stat bool IsAuthenticated{
+		get{
+			return HttpContext.Current.User.Identity.IsAuthenticated;
+		}
+	}
 }
